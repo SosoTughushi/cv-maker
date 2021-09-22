@@ -1,0 +1,55 @@
+:root {
+    --background: rgba(35, 35, 35, 1);
+    --blue: rgba(98, 138, 193, 1);
+    --gray-text: rgba(154, 154, 154, 1);
+    --white-text: rgba(207, 219, 208);
+    --green: rgba(84, 150, 77, 1);
+    --light-green: rgba(172, 209, 151, 1);
+    --dim-green: rgba(110, 187, 145, 1);
+}
+
+.cv-component {
+    width: 21cm;
+    margin: 0 auto;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    background-color: var(--background);
+    .job-item {
+        margin-bottom: 1cm;
+        .job-title {
+            text-align: center;
+            margin-bottom: 0.3cm;
+            .role {
+                color: var(--green);
+                font-size: small;
+            }
+            .company-name {
+                color: var(--white-text);
+                font-size: small;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            .location {
+                color: var(--gray-text);
+                font-size: small;
+                display: inline-block;
+            }
+        }
+        .job-content {
+            color: var(--gray-text);
+            b {
+                color: var(--white-text);
+            }
+            font-size: x-small;
+            text-align: left;
+        }
+        .period {
+            color: var(--blue);
+            font-size: small;
+        }
+    }
+}
+
+html body {
+    background-color: rgba(83, 86, 89, 1);
+}

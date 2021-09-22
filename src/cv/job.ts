@@ -1,5 +1,7 @@
 import { Period } from "./Period"
 
+type ContentType = JSX.Element | string;
+
 export type Job = {
     company: string,
     location: string,
@@ -8,10 +10,10 @@ export type Job = {
 
 type Project = {
     role: string,
-    description: string,
-    scope?: string[],
-    stack: string[],
-    responsibilities?: string[],
+    description: ContentType,
+    scope?: ContentType[],
+    stack: ContentType[],
+    responsibilities?: ContentType[],
     period: Period
 }
 

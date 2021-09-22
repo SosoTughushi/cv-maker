@@ -28,7 +28,7 @@ const lykke: Job = {
         {
             role: "C# Architect / Team Lead",
             period: { dateFrom: new Date(2017, 2, 1), dateTo: new Date(2018, 4, 1) },
-            description: "High frequency margin trading platform for BNPP",
+            description: <span><b>High frequency margin trading platform</b> for BNPP</span>,
             responsibilities: [
                 "With help of BAs, I've modeled domain.",
                 "Wrote event sourcing framework for internal usage.",
@@ -40,7 +40,7 @@ const lykke: Job = {
             ],
             scope: [],
             stack: [
-                "CQRS", "Event Sourcing", "Apache Kafka", "MongoDb", "Redis", "ElasticSearch",
+                <b>CQRS</b>, <b>Event Sourcing</b>, "Apache Kafka", "MongoDb", "Redis", "ElasticSearch",
                 "ReactJs", "ASP.net core mvc", "wamp"
             ]
         },
@@ -120,20 +120,20 @@ const georgianPost: Job = {
         {
             period: { dateFrom: new Date(2013, 11, 1), dateTo: new Date(2015, 10, 1) },
             description: "",
-            role: ".Net Developer", 
+            role: ".Net Developer",
             stack: []
         }
     ]
 }
 
 const allicanceGroupHolding: Job = {
-    company: "Alliance Group Holding", 
+    company: "Alliance Group Holding",
     location: "Tbilisi, Georgia",
     projects: [
         {
             period: { dateFrom: new Date(2013, 8, 1), dateTo: new Date(2013, 11, 1) },
             description: "",
-            role: ".Net Developer", 
+            role: ".Net Developer",
             stack: []
         }
     ]
@@ -163,11 +163,11 @@ export const jobs: Job[] = [
 ];
 
 
-export const education : Education[] = [{
-    period: {dateFrom: new Date(2009, 9,1), dateTo: new Date(2014, 6, 1)},
+export const education: Education[] = [{
+    period: { dateFrom: new Date(2009, 9, 1), dateTo: new Date(2014, 6, 1) },
     faculty: "Computer Science",
     degree: "Bachelor",
-    location: "Tbilisi, Georgia", 
+    location: "Tbilisi, Georgia",
     university: "Tbilisi State University"
 }]
 
