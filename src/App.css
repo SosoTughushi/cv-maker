@@ -1,3 +1,14 @@
 .App {
     align-items: center;
 }
+
+:root {
+    --background: rgba(35, 35, 35, 1);
+    --blue: rgba(98, 138, 193, 1);
+    --gray-text: rgba(154, 154, 154, 1);
+    --white-text: rgba(207, 219, 208);
+    --green: rgba(84, 150, 77, 1);
+    --light-green: rgba(172, 209, 151, 1);
+    --dim-green: rgba(110, 187, 145, 1);
+    --border-color: rgba(112, 112, 112, 1);
+}

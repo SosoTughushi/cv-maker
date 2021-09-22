@@ -1,0 +1,34 @@
+.collapsable {
+    .collapsed-content {
+        width: 100%;
+        position: relative;
+        .toggle-button {
+            display: none;
+            color: var(--white-text);
+            font-size: x-small;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            &.collapsed {
+                display: inherit;
+            }
+        }
+        &:hover {
+            .toggle-button {
+                display: inherit;
+            }
+        }
+    }
+    .expanded-content {
+        border-left: 1px dashed var(--border-color);
+        padding: 0.3cm;
+    }
+    .content-hidden {
+        font-size: xx-large;
+        color: var(--gray-text);
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import { Period } from "./Period"
 
-type ContentType = JSX.Element | string;
+type ContentType = React.ReactNode;
+;
 
 export type Job = {
     company: string,
