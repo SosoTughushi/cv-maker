@@ -12,7 +12,8 @@ export default function Jobs({ jobs }: JobsProps) {
 
 
     return <div className="jobs">
-        {projects.map(project => <div className="job-item">
+        <Collapsable collapsedContent={<div className="section-title">Work Experience</div>}
+        >{projects.map(project => <div className="job-item">
             <div className="row">
                 <div className="col-md-4">
                     <div className="period">
@@ -56,12 +57,11 @@ export default function Jobs({ jobs }: JobsProps) {
 
                         </div>
                     </Collapsable>
-
-
-
                 </div>
             </div>
         </div>)}
+        </Collapsable>
+
 
     </div>
 
