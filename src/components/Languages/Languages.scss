@@ -1,0 +1,30 @@
+.languages {
+    .languages-title {
+        font-size: large;
+        color: var(--blue);
+        text-align: center;
+        margin-bottom: 1cm;
+    }
+    .languages-content {
+        font-size: smaller;
+        color: var(--gray-text);
+        table {
+            width: 100%;
+            th {
+                font-size: xx-small;
+                color: var(--blue);
+                text-align: center;
+            }
+            td {
+                text-align: center;
+            }
+            .language-name {
+                color: var(--white-text)
+            }
+        }
+        .clarification {
+            color: var(--green);
+            font-size: xx-small
+        }
+    }
+}
