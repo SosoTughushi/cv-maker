@@ -1,7 +1,7 @@
-import { Job } from "../job";
+import { Job } from "../cv/job";
 import Moment from "react-moment";
 import "./Jobs.scss";
-import Collapsable from "../../Collapsable";
+import Collapsable from "../Collapsable";
 
 
 export default function Jobs({ jobs }: JobsProps) {

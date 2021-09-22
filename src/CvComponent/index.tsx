@@ -1,7 +1,7 @@
 import Moment from "react-moment";
 import { Education } from "../cv/education";
 import { Job } from "../cv/job";
-import Jobs from "../cv/Jobs";
+import Jobs from "../Jobs";
 import { Language } from "../cv/language";
 import "./CvComponent.scss";
 
