@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CvComponent from './CvComponent';
-import * as soso from "./cv/Soso";
+import CvComponent from '../CvComponent';
+import * as soso from "../../cv/Soso";
 
 function App() {
   return (

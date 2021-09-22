@@ -1,8 +1,8 @@
 import Moment from "react-moment";
-import { Education } from "../cv/education";
-import { Job } from "../cv/job";
+import { Education } from "../../cv/education";
+import { Job } from "../../cv/job";
 import Jobs from "../Jobs";
-import { Language } from "../cv/language";
+import { Language } from "../../cv/language";
 import "./CvComponent.scss";
 
 export default function CvComponent({ jobs, education, languages }: CvComponentProps) {

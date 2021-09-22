@@ -1,4 +1,4 @@
-import { Job } from "../cv/job";
+import { Job } from "../../cv/job";
 import Moment from "react-moment";
 import "./Jobs.scss";
 import Collapsable from "../Collapsable";
