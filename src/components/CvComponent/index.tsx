@@ -5,9 +5,11 @@ import Jobs from "../Jobs";
 import { Language } from "../../cv/language";
 import "./CvComponent.scss";
 import Languages from "../Languages";
+import EducationComponent from "../Education";
 
 export default function CvComponent({ jobs, education, languages }: CvComponentProps) {
     return <div className="cv-component">
+        <EducationComponent education={education} />
         <Languages languages={languages} />
         <Jobs jobs={jobs} />
     </div>

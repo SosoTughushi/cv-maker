@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Collapsable.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronDown, faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default function Collapsable({ children, collapsedContent }: CollapsableProps) {
     const [collapsed, setCollapsed] = useState(false);

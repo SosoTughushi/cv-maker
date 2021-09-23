@@ -2,6 +2,7 @@ import { Job } from "../../cv/job";
 import Moment from "react-moment";
 import "./Jobs.scss";
 import Collapsable from "../Collapsable";
+import PeriodComponent from "../Period";
 
 
 export default function Jobs({ jobs }: JobsProps) {
@@ -16,11 +17,7 @@ export default function Jobs({ jobs }: JobsProps) {
         >{projects.map(project => <div className="job-item">
             <div className="row">
                 <div className="col-md-4">
-                    <div className="period">
-                        <Moment format="MMM YYYY">{project.period.dateFrom}</Moment>
-                        -
-                        {project.period.dateTo ? <Moment format="MMM YYYY">{project.period.dateTo}</Moment> : "Today"}
-                    </div>
+                    <PeriodComponent period={project.period} />
                 </div>
                 <div className="col-md-8">
                     <Collapsable

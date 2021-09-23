@@ -2,12 +2,14 @@
     .collapsed-content {
         width: 100%;
         position: relative;
+        padding-bottom: 0.2cm;
         .toggle-button {
             display: none;
             color: var(--white-text);
             font-size: x-small;
+            margin: 0;
             position: absolute;
-            bottom: 0;
+            top: 15%;
             left: 0;
             &.collapsed {
                 display: inherit;
@@ -21,7 +23,6 @@
     }
     .expanded-content {
         border-left: 1px dashed var(--border-color);
-        padding: 0.3cm;
     }
     .content-hidden {
         font-size: xx-large;

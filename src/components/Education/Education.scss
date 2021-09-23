@@ -1,0 +1,20 @@
+.education {
+    .education-title {
+        font-size: large;
+        color: var(--blue);
+        text-align: center;
+        margin-bottom: 1cm;
+    }
+    .degree {
+        color: var(--green);
+        font-size: small;
+    }
+    .university {
+        font-size: small;
+        color: var(--white-text);
+    }
+    .location {
+        font-size: small;
+        color: var(--gray-text)
+    }
+}
