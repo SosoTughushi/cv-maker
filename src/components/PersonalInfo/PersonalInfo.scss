@@ -1,0 +1,51 @@
+.personal-info {
+    color: var(--white-text);
+    font-size: x-small;
+    .section-title {
+        font-size: small;
+        color: var(--blue);
+    }
+    .full-name {
+        font-size: medium;
+        color: var(--dim-green);
+        margin-bottom: 15px;
+    }
+    .info-line {
+        margin-bottom: 2px;
+        svg {
+            color: var(--dim-green);
+            margin-right: 10px;
+        }
+        .fa {
+            color: var(--dim-green);
+            margin-right: 10px;
+        }
+    }
+    .image-section {
+        img {
+            width: 5cm;
+            height: 5cm;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .position-title {
+        font-size: medium;
+        color: var(--blue);
+        margin-right: 5px;
+    }
+    .position {
+        font-size: medium;
+        color: var(--dim-green);
+    }
+    .summary {
+        .section-title {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .summary-text {
+            font-size: small;
+            color: var(--light-green);
+        }
+    }
+}

@@ -2,6 +2,11 @@
     align-items: center;
 }
 
+body {
+    -webkit-print-color-adjust: exact;
+    /* -webkit-print: exact; */
+}
+
 :root {
     --background: rgba(35, 35, 35, 1);
     --blue: rgba(98, 138, 193, 1);

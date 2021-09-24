@@ -6,9 +6,11 @@ import { Language } from "../../cv/language";
 import "./CvComponent.scss";
 import Languages from "../Languages";
 import EducationComponent from "../Education";
-
-export default function CvComponent({ jobs, education, languages }: CvComponentProps) {
+import PersonalInfoComponent from "../PersonalInfo";
+import PersonalInfo from "../../cv/personalInfo";
+export default function CvComponent({ personalInfo,jobs, education, languages }: CvComponentProps) {
     return <div className="cv-component">
+        <PersonalInfoComponent personalInfo={personalInfo} />
         <EducationComponent education={education} />
         <Languages languages={languages} />
         <Jobs jobs={jobs} />
@@ -18,7 +20,8 @@ export default function CvComponent({ jobs, education, languages }: CvComponentP
 
 
 interface CvComponentProps {
+    personalInfo: PersonalInfo,
     education: Education[],
     jobs: Job[],
-    languages: Language[]
+    languages: Language[],
 }

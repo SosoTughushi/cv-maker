@@ -1,6 +1,7 @@
 import { Education } from "../education"
 import { Job } from "../job"
 import { Language } from "../language"
+import PersonalInfo from "../personalInfo"
 
 const lykke: Job = {
     company: "Lykke",
@@ -178,3 +179,18 @@ export const languages: Language[] = [
     { name: "Russian", listening: "C1", reading: "C1", spokenInteraction: "B2", spokenProduction: "B2", writing: "B2" },
     { name: "English", listening: "B1", reading: "B1", spokenInteraction: "B1", spokenProduction: "B1", writing: "B1" }
 ]
+
+export const personalInfo: PersonalInfo = {
+    fullName: "Soso Tughushi",
+    position: "Software Developer",
+    address: "****",
+    phoneNo: "*****",
+    email: "*****",
+    skypeId: "*****",
+    linkedInUrl: "*****",
+    githubUrl: "https://github.com/SosoTughushi/",
+    imageUrl: window.location.origin + "/cv-images/SosoCvImage.jpg",
+    summary: <>I am .Net stack based Software Developer with 8+ years of work experience, with big passion for programming, well
+    organized, friendly, creative, highly motivated, with great curiousity and creativity, always up for challanges, always striving
+    for excellence and self improvement.</>,
+};

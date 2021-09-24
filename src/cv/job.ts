@@ -1,7 +1,5 @@
+import { ContentType } from "./ContentType";
 import { Period } from "./Period"
-
-type ContentType = React.ReactNode;
-;
 
 export type Job = {
     company: string,
