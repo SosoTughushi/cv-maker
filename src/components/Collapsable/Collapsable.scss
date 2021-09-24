@@ -21,6 +21,11 @@
             }
         }
     }
+    .start,
+    .end {
+        color: var(--white-text);
+        font-size: small;
+    }
     .expanded-content {
         border-left: 1px dashed var(--border-color);
         padding-left: 10px;

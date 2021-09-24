@@ -2,11 +2,12 @@ import { Education } from "../../cv/education";
 import "./Education.scss";
 import Collapsable from "../Collapsable";
 import PeriodComponent from "../Period";
+import Section from "../Section";
 
 export default function EducationComponent({ education }: EducationProps) {
     return <div className="education">
-        <div className="education-content">
-            <Collapsable collapsedContent={<div className="education-title">Education</div>}>
+        <Section title="Education">
+            <div className="education-content">
                 {education.map(edu => <div className="education-item">
                     <div className="row">
                         <div className="col-md-4">
@@ -22,8 +23,8 @@ export default function EducationComponent({ education }: EducationProps) {
                         </div>
                     </div>
                 </div>)}
-            </Collapsable>
-        </div>
+            </div>
+        </Section>
     </div>
 }
 interface EducationProps {

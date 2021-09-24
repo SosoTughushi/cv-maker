@@ -13,14 +13,17 @@ export default function Collapsable({ children, collapsedContent }: CollapsableP
 
     return <div className="collapsable">
         <div className="collapsed-content">
-            <div className={"toggle-button" + (collapsed? " collapsed" : "")} onClick={() => setCollapsed(!collapsed)}>
+            <div className={"toggle-button" + (collapsed ? " collapsed" : "")} onClick={() => setCollapsed(!collapsed)}>
                 <FontAwesomeIcon icon={arrowIcon} />
             </div>
             {collapsedContent}
         </div>
+        <div className="start">{"{"}</div>
         {!collapsed && <div className="expanded-content" >
+
             {children}
         </div>}
+        <div className="end">{"}"}</div>
 
     </div>
 }

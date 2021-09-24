@@ -1,10 +1,11 @@
 import { Language } from "../../cv/language";
 import Collapsable from "../Collapsable";
+import Section from "../Section";
 import "./Languages.scss";
 
 export default function Languages({ languages }: LanguagesProps) {
     return <div className="languages">
-        <Collapsable collapsedContent={<div className="languages-title">Languages</div>}>
+        <Section title="Languages">
             <div className="languages-content">
                 <table>
                     <thead>
@@ -30,7 +31,7 @@ export default function Languages({ languages }: LanguagesProps) {
                     Levels: A1 and A2: Basic user - B1 and B2: Independent user - C1 and C2: Proficient user
                 </div>
             </div>
-        </Collapsable>
+        </Section>
     </div>
 }
 
