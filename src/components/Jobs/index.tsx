@@ -1,4 +1,4 @@
-import { Job } from "../../cv/job";
+import { Job, Project } from "../../cv/job";
 import Moment from "react-moment";
 import "./Jobs.scss";
 import Collapsable from "../Collapsable";
@@ -6,12 +6,48 @@ import PeriodComponent from "../Period";
 import Section from "../Section";
 
 
+
 export default function Jobs({ jobs }: JobsProps) {
+    type projectWithJob = Project & { companyName: string, location: string }
     const projects = jobs
         .flatMap(job =>
             job.projects.map(project => ({ ...project, companyName: job.company, location: job.location })));
 
+    function renderTitle(project: projectWithJob) {
+        return <div className="job-title">
+            <div className="role">
+                {project.role}
+            </div>
+            <div>
+                <div className="company-name">
+                    {project.companyName}
+                </div>
+                <div className="location">
+                    (<span>{project.location}</span>)
+                </div>
+            </div>
+        </div>
+    }
 
+    function renderContent(project: projectWithJob) {
+        return <div className="job-content">
+            <div className="description">
+                {project.description}
+            </div>
+            {project.scope && project.scope.length > 0 && (<div className="scope-list">
+                <b>Scope:</b>
+                {project.scope.map(scope => <div>* {scope}</div>)}
+            </div>)}
+            {project.stack.length > 0 && <div className="stack">
+                <b>Stack:</b>  {project.stack.map(stack => <span className="stack-item">{stack}, </span>)}
+            </div>}
+            {project.responsibilities && project.responsibilities.length > 0 && <div className="responsibilities">
+                <b>Responsibilities:</b>
+                {project.responsibilities.map(resp => <div>* {resp}</div>)}
+            </div>}
+
+        </div>
+    }
 
     return <div className="jobs">
         <Section title="Work Experience">
@@ -21,38 +57,10 @@ export default function Jobs({ jobs }: JobsProps) {
                         <PeriodComponent period={project.period} />
                     </div>
                     <div className="col-md-8 col-sm-8">
-                        <Section title={
-                            <div className="job-title">
-                                <div className="role">
-                                    {project.role}
-                                </div>
-                                <div>
-                                    <div className="company-name">
-                                        {project.companyName}
-                                    </div>
-                                    <div className="location">
-                                        (<span>{project.location}</span>)
-                                    </div>
-                                </div>
-                            </div>}>
-                            <div className="job-content">
-                                <div className="description">
-                                    {project.description}
-                                </div>
-                                {project.scope && project.scope.length > 0 && (<div className="scope-list">
-                                    <b>Scope:</b>
-                                    {project.scope.map(scope => <div>* {scope}</div>)}
-                                </div>)}
-                                {project.stack.length > 0 && <div className="stack">
-                                    <b>Stack:</b>  {project.stack.map(stack => <span className="stack-item">{stack}, </span>)}
-                                </div>}
-                                {project.responsibilities && project.responsibilities.length > 0 && <div className="responsibilities">
-                                    <b>Responsibilities:</b>
-                                    {project.responsibilities.map(resp => <div>* {resp}</div>)}
-                                </div>}
+                        {project.description ? <Section title={renderTitle(project)}>
+                            {renderContent(project)}
+                        </Section> : renderTitle(project)}
 
-                            </div>
-                        </Section>
                     </div>
                 </div>
             </div>)}

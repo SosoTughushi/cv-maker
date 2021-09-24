@@ -1,4 +1,3 @@
-import Moment from "react-moment";
 import { Education } from "../../cv/education";
 import { Job } from "../../cv/job";
 import Jobs from "../Jobs";
@@ -11,7 +10,11 @@ import PersonalInfo from "../../cv/personalInfo";
 import Skill from "../../cv/skill";
 import { skills } from "../../cv/Soso";
 import SkillList from "../Skills";
+import { useEffect } from "react";
 export default function CvComponent({ personalInfo,jobs, education, languages }: CvComponentProps) {
+    useEffect(()=> {
+        document.title=personalInfo.fullName;
+    });
     return <div className="cv-component">
         <PersonalInfoComponent personalInfo={personalInfo} />
         <SkillList skills={skills} />

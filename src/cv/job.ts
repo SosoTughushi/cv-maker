@@ -7,9 +7,9 @@ export type Job = {
     projects: Project[]
 }
 
-type Project = {
+export type Project = {
     role: string,
-    description: ContentType,
+    description?: ContentType,
     scope?: ContentType[],
     stack: ContentType[],
     responsibilities?: ContentType[],

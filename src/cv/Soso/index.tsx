@@ -141,7 +141,6 @@ const allicanceGroupHolding: Job = {
     projects: [
         {
             period: { dateFrom: new Date(2013, 7, 1), dateTo: new Date(2013, 10, 1) },
-            description: "",
             role: ".Net Developer",
             stack: []
         }
@@ -154,7 +153,6 @@ const ibs: Job = {
     projects: [
         {
             period: { dateFrom: new Date(2013, 0, 1), dateTo: new Date(2013, 6, 1) },
-            description: "",
             role: "1C Programmer",
             stack: [],
         }
