@@ -1,0 +1,15 @@
+.skills {
+    color: var(--gray-text);
+    font-size: x-small;
+    .skills-content {
+        column-count: 2;
+        column-width: 45%;
+        column-gap: 5%;
+    }
+    .skill {
+        margin-bottom: 5px;
+    }
+    .subskill {
+        margin-left: 10px;
+    }
+}

@@ -18,12 +18,18 @@ export default function Collapsable({ children, collapsedContent }: CollapsableP
             </div>
             {collapsedContent}
         </div>
-        <div className="start">{"{"}</div>
-        {!collapsed && <div className="expanded-content" >
 
-            {children}
+        {!collapsed && <>
+            <div className="start">{"{"}</div>
+            <div className="expanded-content" >
+
+                {children}
+            </div>
+            <div className="end">{"}"}</div>
+        </>}
+        {collapsed && <div className="content-hidden" onClick={() => setCollapsed(false)}>
+            <span className="start">{"{"}</span> ... <span className="end">{"}"}</span>
         </div>}
-        <div className="end">{"}"}</div>
 
     </div>
 }

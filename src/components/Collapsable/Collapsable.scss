@@ -9,7 +9,8 @@
             font-size: x-small;
             margin: 0;
             position: absolute;
-            top: 15%;
+            bottom: 0;
+            cursor: pointer;
             left: 0;
             &.collapsed {
                 display: inherit;
@@ -31,9 +32,7 @@
         padding-left: 10px;
     }
     .content-hidden {
-        font-size: xx-large;
         color: var(--gray-text);
-        text-align: center;
         &:hover {
             cursor: pointer;
         }

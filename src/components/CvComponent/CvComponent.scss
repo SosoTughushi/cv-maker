@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding: 1cm;
     background-color: var(--background);
+    b {
+        color: var(--white-text);
+        font-weight: normal;
+    }
 }
 
 html body {
