@@ -1,6 +1,4 @@
 import Skill from "../../cv/skill";
-import { skills } from "../../cv/Soso";
-import Collapsable from "../Collapsable";
 
 export default function SkillComponent({ skill }: SkillProps) {
     return <div className="skill">

@@ -7,12 +7,12 @@ import 'font-awesome/css/font-awesome.min.css';
 export default function PersonalInfoComponent({ personalInfo }: PersonalInfoProps) {
     return <div className="personal-info">
         <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-4">
                 <div className="image-section">
                     <img src={personalInfo.imageUrl} />
                 </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8 col-sm-8">
                 <div className="section-title">Personal Information</div>
                 <div className="full-name">{personalInfo.fullName}</div>
                 <div className="info-line">

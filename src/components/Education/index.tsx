@@ -10,10 +10,10 @@ export default function EducationComponent({ education }: EducationProps) {
             <div className="education-content">
                 {education.map(edu => <div className="education-item">
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-4 col-sm-4">
                             <PeriodComponent period={edu.period} />
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-8 col-sm-8">
                             <div className="degree">
                                 {edu.faculty} - {edu.degree}
                             </div>

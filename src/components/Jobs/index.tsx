@@ -17,10 +17,10 @@ export default function Jobs({ jobs }: JobsProps) {
         <Section title="Work Experience">
             {projects.map(project => <div className="job-item">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-sm-4">
                         <PeriodComponent period={project.period} />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-sm-8">
                         <Section title={
                             <div className="job-title">
                                 <div className="role">
