@@ -1,27 +1,29 @@
 .jobs {
+    p {
+        margin-bottom: 0.5rem;
+    }
     .job-item {
         margin-bottom: 1cm;
         .job-title {
             text-align: center;
-            margin-bottom: 0.3cm;
             .role {
-                color: var(--dim-green);
+                color: var(--title-text);
                 font-size: small;
             }
             .company-name {
-                color: var(--white-text);
+                color: var(--highlighted-text);
                 font-size: small;
                 display: inline-block;
                 margin-right: 5px;
             }
             .location {
-                color: var(--gray-text);
+                color: var(--default-text);
                 font-size: small;
                 display: inline-block;
             }
         }
         .job-content {
-            color: var(--gray-text);
+            color: var(--default-text);
             font-size: x-small;
             text-align: left;
         }

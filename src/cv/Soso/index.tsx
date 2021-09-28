@@ -63,28 +63,24 @@ const amazon: Job = {
     location: "Luxembourg, Luxembourg",
     projects: [
         {
-            stack: ["ReactJs", "Redux", "AWS Lambda", "AWS s3 bucket"],
-            description: "We were developing an internal tool to query data about order movement.",
-            responsibilities: ["I was responsible for writing front-end part"],
             role: "Software Engineer",
+            description: <>
+                <p>I was member of dVat team, which was focused on rethinking and redesigning of vat calculation system.
+                    I’ve designed a microservice, which consumes messages from sqs, sends request to dependent service and writes result in Dynamo DB.</p>
+                <p>I also wrote front end for internal tool to query data about order movement.</p>
+            </>,
+            responsibilities: ["Analysis of problem at hand.",
+                "Analysis of metrics.",
+                "Designing microservice.",
+                "Writing supporting documentation.",
+                "Estimation of cost.",
+                "Creation of pipelines for all environment stages.",
+                "Implemention of microservice.",
+                "Negotiation with dependancy teams."],
+            stack: ["EC2", "ECS", "AWS SQS", "DynamoDb", "AWS Lambda", <b>React/Redux</b>, "AWS s3 bucket",
+                "Coral (internal java framework for creating web service)", "datapath (internal platform for doing cool stuff)"],
             scope: [],
-            period: { dateFrom: new Date(2019, 10, 1), dateTo: new Date(2020, 3, 1) }
-        },
-        {
-            role: "Software Engineer",
-            description: "I was member of dVat team, which was focused on rethinking and redesigning of vat calculation system. I’ve designed a microservice, which consumes messages from sqs, sends request to dependent service and writes result in Dynamo DB.",
-            period: { dateFrom: new Date(2020, 3, 1), dateTo: new Date(2021, 1, 1) },
-            scope: [],
-            stack: ["EC2", "ECS", "AWS SQS", "DynamoDb", "Coral (internal java framework)", "datapath (internal platform for doing cool stuff)"],
-            responsibilities: [
-                "Analysis of problem at hand",
-                "Designing microservice",
-                "Writing supporting documentation",
-                "Estimating cost",
-                "Creation of pipelines for all environment stages",
-                "Implementing microservice",
-                "Negotiating with dependancy teams"
-            ],
+            period: { dateFrom: new Date(2019, 10, 1), dateTo: new Date(2021, 1, 1) }
         }
     ]
 }
@@ -102,12 +98,28 @@ const aurea: Job = {
     ]
 }
 
+const topTal: Job = {
+    company: "Toptal",
+    location: "remote",
+    projects: [
+        {
+            description: <><b>I am member of Toptal since 2019. </b>
+                Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world.
+                Top companies hire Toptal freelancers for their most important projects. </>,
+            period: { dateFrom: new Date(2019, 6, 1), dateTo: undefined },
+            role: "Freelance Software Developer",
+            stack:[],
+        },
+
+    ]
+}
+
 const altaSoftware: Job = {
     company: "Alta Software",
     location: "Tbilisi, Georgia",
     projects: [
         {
-            description: "Worked on development of Internet Bank. This product was დაინერგა in 3 local banks",
+            description: "Worked on development of Internet Bank, which was launched in 3 local banks.",
             period: { dateFrom: new Date(2015, 9, 1), dateTo: new Date(2016, 3, 1) },
             stack: ["Asp.net MVC with razor", "bootstrap", "jquery", "WCF", "ADO.NET", "MsSql"],
             role: ".Net Developer"
@@ -127,7 +139,7 @@ const georgianPost: Job = {
                     Developed big range of Asp.Net MVC Applications for internal usage.
                     Worked on developing new web based postal system. Wrote new client for Pocket PC.
                     Worked on integration with IPS (International Post System). </div>
-                <div>Created DataGrid component for razor, which had server side pagination and filtration.</div>
+                <div>Created DataGrid component for razor, which had <b>server side pagination and filtration</b>. </div>
             </>,
             role: ".Net Developer",
             stack: ["WCF", "ASP.NET MVC with razor", "bootstrap", "jquery", "Oracle", "WinForms", "Compact Framework"]
@@ -160,6 +172,7 @@ const ibs: Job = {
 }
 
 export const jobs: Job[] = [
+    topTal,
     amazon,
     lykke,
     aurea,
@@ -183,17 +196,16 @@ export const education: Education[] = [{
 export const languages: Language[] = [
     { name: "English", listening: "C1", reading: "C1", spokenInteraction: "C1", spokenProduction: "C1", writing: "B2" },
     { name: "Russian", listening: "C1", reading: "C1", spokenInteraction: "B2", spokenProduction: "B2", writing: "B2" },
-    { name: "English", listening: "B1", reading: "B1", spokenInteraction: "B1", spokenProduction: "B1", writing: "B1" }
+    { name: "German", listening: "B1", reading: "B1", spokenInteraction: "B1", spokenProduction: "B1", writing: "B1" }
 ]
 
 export const personalInfo: PersonalInfo = {
     fullName: "Soso Tughushi",
     position: "Software Developer",
-    address: "****",
-    phoneNo: "*****",
-    email: "*****",
-    skypeId: "*****",
-    linkedInUrl: "*****",
+    address: "Tbilisi (Georgia)",
+    phoneNo: "+995 577 777760",
+    email: "mryemama@gmail.com",
+    linkedInUrl: "https://www.linkedin.com/in/soso-tughushi-627518b5/",
     githubUrl: "https://github.com/SosoTughushi/",
     imageUrl: window.location.origin + "/cv-images/SosoCvImage.jpg",
     summary: <>I am .Net stack based Software Developer with 8+ years of work experience, with big passion for programming, well
@@ -234,13 +246,15 @@ export const skills: Skill[] = [
             <b>Typescript</b>,
             <b>Redux</b>,
             <b>sass</b>,
+            <b>jQuery</b>,
+            "razor"
         ]
     }, {
         skill: <>Good knowledge of following <b>Message Brokers</b>:</>,
         subskills: [
             <b>Apache Kafka</b>,
             <b>RabbitMq</b>,
-            <><b>AWS SQS</b> (Standard)</>,
+            <><b>AWS SQS</b> (Standard Queues)</>,
         ]
     },
     {
@@ -248,8 +262,8 @@ export const skills: Skill[] = [
             acceptance).</>
     },
     {
-        skill: <>Experienced in <b>designing</b> and working with <b>distributed</b>distributed and
-            <b>scalable</b> systems with high availability, high throughput and
+        skill: <>Experienced in <b>designing</b> and working with <b>distributed</b> and 
+             <b> scalable</b> systems with high availability, high throughput and
             low latency.</>
     },
     {

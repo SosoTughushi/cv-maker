@@ -1,14 +1,14 @@
 .education {
     .degree {
-        color: var(--dim-green);
+        color: var(--title-text);
         font-size: small;
     }
     .university {
         font-size: small;
-        color: var(--white-text);
+        color: var(--highlighted-text);
     }
     .location {
         font-size: small;
-        color: var(--gray-text)
+        color: var(--default-text)
     }
 }

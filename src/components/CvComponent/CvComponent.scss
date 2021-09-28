@@ -4,8 +4,14 @@
     padding: 1cm;
     background-color: var(--background);
     b {
-        color: var(--white-text);
+        color: var(--highlighted-text);
         font-weight: normal;
+    }
+}
+
+@media print {
+    body {
+        background-color: var(--background) !important;
     }
 }
 

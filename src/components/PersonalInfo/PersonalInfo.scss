@@ -1,23 +1,26 @@
 .personal-info {
-    color: var(--white-text);
+    color: var(--highlighted-text);
+    a {
+        color: var(--highlighted-text);
+    }
     font-size: x-small;
     .section-title {
         font-size: small;
-        color: var(--blue);
+        color: var(--blue--text);
     }
     .full-name {
         font-size: medium;
-        color: var(--dim-green);
+        color: var(--title-text);
         margin-bottom: 15px;
     }
     .info-line {
         margin-bottom: 2px;
         svg {
-            color: var(--dim-green);
+            color: var(--title-text);
             margin-right: 10px;
         }
         .fa {
-            color: var(--dim-green);
+            color: var(--title-text);
             margin-right: 10px;
         }
     }
@@ -31,12 +34,12 @@
     }
     .position-title {
         font-size: medium;
-        color: var(--blue);
+        color: var(--blue--text);
         margin-right: 5px;
     }
     .position {
         font-size: medium;
-        color: var(--dim-green);
+        color: var(--title-text);
     }
     .summary {
         .section-title {
@@ -45,7 +48,7 @@
         }
         .summary-text {
             font-size: small;
-            color: var(--light-green);
+            color: var(--important-text);
         }
     }
 }

@@ -7,12 +7,12 @@ import 'font-awesome/css/font-awesome.min.css';
 export default function PersonalInfoComponent({ personalInfo }: PersonalInfoProps) {
     return <div className="personal-info">
         <div className="row">
-            <div className="col-md-4 col-sm-4">
+            <div className="col-md-4 col-sm-4 col-xs-4">
                 <div className="image-section">
                     <img src={personalInfo.imageUrl} />
                 </div>
             </div>
-            <div className="col-md-8 col-sm-8">
+            <div className="col-md-8 col-sm-8  col-xs-8">
                 <div className="section-title">Personal Information</div>
                 <div className="full-name">{personalInfo.fullName}</div>
                 <div className="info-line">
@@ -28,10 +28,10 @@ export default function PersonalInfoComponent({ personalInfo }: PersonalInfoProp
                     <span className="fa fa-skype" />{personalInfo.skypeId}
                 </div>}
                 {personalInfo.linkedInUrl && <div className="info-line">
-                    <span className="fa fa-linkedin" />{personalInfo.linkedInUrl}
+                    <span className="fa fa-linkedin" /><a href={personalInfo.linkedInUrl}>{personalInfo.linkedInUrl}</a>
                 </div>}
                 {personalInfo.githubUrl && <div className="info-line">
-                    <span className="fa fa-github" />{personalInfo.githubUrl}
+                    <span className="fa fa-github" /><a href={personalInfo.githubUrl}>{personalInfo.githubUrl}</a>
                 </div>}
 
                 <div>

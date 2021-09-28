@@ -2,10 +2,9 @@
     .collapsed-content {
         width: 100%;
         position: relative;
-        padding-bottom: 0.2cm;
         .toggle-button {
             display: none;
-            color: var(--white-text);
+            color: var(--highlighted-text);
             font-size: x-small;
             margin: 0;
             position: absolute;
@@ -24,7 +23,7 @@
     }
     .start,
     .end {
-        color: var(--white-text);
+        color: var(--highlighted-text);
         font-size: small;
     }
     .expanded-content {
@@ -32,7 +31,7 @@
         padding-left: 10px;
     }
     .content-hidden {
-        color: var(--gray-text);
+        color: var(--default-text);
         &:hover {
             cursor: pointer;
         }

@@ -1,21 +1,32 @@
+:root {
+    // dark
+    --background: rgba(35, 35, 35, 1);
+    --blue--text: rgba(98, 138, 193, 1);
+    --default-text: rgba(154, 154, 154, 1);
+    --highlighted-text: rgba(207, 219, 208);
+    --comment-text: rgba(84, 150, 77, 1);
+    --important-text: rgba(172, 209, 151, 1);
+    --title-text: rgba(110, 187, 145, 1);
+    --border-color: rgba(112, 112, 112, 1);
+}
+
+// :root {
+//     // light
+//     --background: rgba(255, 255, 255, 1);
+//     --blue--text: rgba(43, 145, 175, 1); //rgba(43, 145, 175, 1);
+//     --default-text: rgba(128, 128, 128, 1);
+//     --highlighted-text: rgba(0, 0, 0, 1);
+//     --comment-text: rgba(0, 128, 0, 1);
+//     --important-text: rgba(0, 0, 0, 1);
+//     --title-text: rgba(143, 8, 196, 1);
+//     --border-color: rgba(112, 112, 112, 1);
+// }
 .App {
     align-items: center;
 }
 
 body {
-    -webkit-print-color-adjust: exact;
-    /* -webkit-print: exact; */
-}
-
-:root {
-    --background: rgba(35, 35, 35, 1);
-    --blue: rgba(98, 138, 193, 1);
-    --gray-text: rgba(154, 154, 154, 1);
-    --white-text: rgba(207, 219, 208);
-    --green: rgba(84, 150, 77, 1);
-    --light-green: rgba(172, 209, 151, 1);
-    --dim-green: rgba(110, 187, 145, 1);
-    --border-color: rgba(112, 112, 112, 1);
+    -webkit-print-color-adjust: exact !important;
 }
 
 // https://stackoverflow.com/questions/22199429/bootstrap-grid-for-printing

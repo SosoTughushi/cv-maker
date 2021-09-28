@@ -1,23 +1,23 @@
 .languages {
     .languages-content {
         font-size: smaller;
-        color: var(--gray-text);
+        color: var(--default-text);
         table {
             width: 100%;
             th {
                 font-size: xx-small;
-                color: var(--blue);
+                color: var(--blue--text);
                 text-align: center;
             }
             td {
                 text-align: center;
             }
             .language-name {
-                color: var(--white-text)
+                color: var(--highlighted-text)
             }
         }
         .clarification {
-            color: var(--green);
+            color: var(--comment-text);
             font-size: xx-small
         }
     }
