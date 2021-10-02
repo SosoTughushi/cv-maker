@@ -14,13 +14,13 @@ const lykke: Job = {
             description: "I was member of integrations team. Our focus was to adapt Lykke's existing margin trading platform to external customer's needs. We wrote wide range of services.",
             responsibilities: [
                 "Design and development of most services and code review",
-                "Onboarding new developers by explaining domain, mentoring, existing components, team coding conventions and workflow. ",
-                "I was scrum master (for 3 months)."],
+                "Onboarding new developers by explaining domain, mentoring, existing components, team coding conventions and workflow",
+                "I was scrum master (for 3 months)"],
             scope: [
-                "Transforming/decorating data coming from one component and feeding it to another (via http calls, via rabbit exchanges/queues or via tcp sockets).",
-                "Producing reports for customers.",
-                "Monitoring activities of system and pushing them to customer.",
-                "Managing complex workflows."
+                "Transforming/decorating data coming from one component and feeding it to another (via http calls, via rabbit exchanges/queues or via tcp sockets)",
+                "Producing reports for customers",
+                "Monitoring activities of system and pushing them to customer",
+                "Managing complex workflows"
             ],
             stack: [
                 "ReactJs", "ASP.NET core", "RabbitMq", "SignalR", "MsSql"
@@ -30,15 +30,17 @@ const lykke: Job = {
         {
             role: "C# Architect / Team Lead",
             period: { dateFrom: new Date(2017, 1, 1), dateTo: new Date(2018, 3, 1) },
-            description: <span><b>High frequency margin trading platform</b> for BNPP</span>,
+            description: <>I with my team have designed and implemented high frequency margin trading platform with <b>CQRS</b> and
+                <b>Event Sourcing</b> using <b>Apache Kafka</b> as event store, <b>MongoDb</b> as storage for snapshots of aggregates,
+                <b>Redis/Mongo/Elasticsearch</b> for projections, asp.net core mvc for http endpoints, wamp for server to client communication and React on FE side.</>,
             responsibilities: [
-                "With help of BAs, I've modeled domain.",
-                "Wrote event sourcing framework for internal usage.",
-                "Explained co-workers business, explained design of system.",
-                "Established coding and testing practices.",
-                "Actively reviewed Pull Requests.",
-                "Distributed the work.",
-                "Implemented massive amount of features."
+                "With help of BAs, I've modeled domain",
+                <><b>Wrote event sourcing framework</b> for internal usage</>,
+                "Explained co-workers business, explained design of system",
+                "Established coding and testing practices",
+                "Actively reviewed Pull Requests",
+                "Distributed the work",
+                "Implemented massive amount of features"
             ],
             scope: [],
             stack: [
@@ -70,15 +72,15 @@ const amazon: Job = {
                 <p>I also wrote front end for internal tool to query data about order movement.</p>
             </>,
             responsibilities: ["Analysis of problem at hand.",
-                "Analysis of metrics.",
-                "Designing microservice.",
-                "Writing supporting documentation.",
-                "Estimation of cost.",
-                "Creation of pipelines for all environment stages.",
-                "Implemention of microservice.",
-                "Negotiation with dependancy teams."],
+                "Analysis of metrics",
+                "Designing microservice",
+                "Writing supporting documentation",
+                "Estimation of cost",
+                "Creation of pipelines for all environment stages",
+                "Implemention of microservice",
+                "Negotiation with dependancy teams"],
             stack: ["EC2", "ECS", "AWS SQS", "DynamoDb", "AWS Lambda", <b>React/Redux</b>, "AWS s3 bucket",
-                "Coral (internal java framework for creating web service)", "datapath (internal platform for doing cool stuff)"],
+                "Coral (internal java framework for creating web service)", "datapath (internal platform for precomputation and joining key-value tables)"],
             scope: [],
             period: { dateFrom: new Date(2019, 10, 1), dateTo: new Date(2021, 1, 1) }
         }
@@ -90,7 +92,7 @@ const aurea: Job = {
     location: "Remote",
     projects: [
         {
-            description: 'Our team was called "Code cleanup". We were using code analysis tools to refactor existing code, improve unit test coverage and fix code smells',
+            description: 'Our team was called "Code cleanup". We were using code analysis tools to refactor existing code, improve unit test coverage and fix code smells.',
             stack: ["SonarCube", "C#", "Java"],
             period: { dateFrom: new Date(2016, 4, 1), dateTo: new Date(2016, 6, 1) },
             role: "C# Engineer"
@@ -103,12 +105,12 @@ const topTal: Job = {
     location: "remote",
     projects: [
         {
-            description: <><b>I am member of Toptal since 2019. </b>
+            description: <><b>I am proud member of Toptal since 2019. </b>
                 Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world.
                 Top companies hire Toptal freelancers for their most important projects. </>,
             period: { dateFrom: new Date(2019, 6, 1), dateTo: undefined },
             role: "Freelance Software Developer",
-            stack:[],
+            stack: [],
         },
 
     ]
@@ -262,8 +264,8 @@ export const skills: Skill[] = [
             acceptance).</>
     },
     {
-        skill: <>Experienced in <b>designing</b> and working with <b>distributed</b> and 
-             <b> scalable</b> systems with high availability, high throughput and
+        skill: <>Experienced in <b>designing</b> and working with <b>distributed</b> and
+            <b> scalable</b> systems with high availability, high throughput and
             low latency.</>
     },
     {
