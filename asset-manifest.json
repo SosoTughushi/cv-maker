@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cv-maker/static/css/main.d48ba5d5.chunk.css",
+    "main.js": "/cv-maker/static/js/main.3f7e90c8.chunk.js",
+    "main.js.map": "/cv-maker/static/js/main.3f7e90c8.chunk.js.map",
+    "runtime-main.js": "/cv-maker/static/js/runtime-main.07862555.js",
+    "runtime-main.js.map": "/cv-maker/static/js/runtime-main.07862555.js.map",
+    "static/css/2.b73ce3c1.chunk.css": "/cv-maker/static/css/2.b73ce3c1.chunk.css",
+    "static/js/2.de66f76b.chunk.js": "/cv-maker/static/js/2.de66f76b.chunk.js",
+    "static/js/2.de66f76b.chunk.js.map": "/cv-maker/static/js/2.de66f76b.chunk.js.map",
+    "static/js/3.7ddf1e17.chunk.js": "/cv-maker/static/js/3.7ddf1e17.chunk.js",
+    "static/js/3.7ddf1e17.chunk.js.map": "/cv-maker/static/js/3.7ddf1e17.chunk.js.map",
+    "index.html": "/cv-maker/index.html",
+    "static/css/2.b73ce3c1.chunk.css.map": "/cv-maker/static/css/2.b73ce3c1.chunk.css.map",
+    "static/css/main.d48ba5d5.chunk.css.map": "/cv-maker/static/css/main.d48ba5d5.chunk.css.map",
+    "static/js/2.de66f76b.chunk.js.LICENSE.txt": "/cv-maker/static/js/2.de66f76b.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/cv-maker/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07862555.js",
+    "static/css/2.b73ce3c1.chunk.css",
+    "static/js/2.de66f76b.chunk.js",
+    "static/css/main.d48ba5d5.chunk.css",
+    "static/js/main.3f7e90c8.chunk.js"
+  ]
+}
